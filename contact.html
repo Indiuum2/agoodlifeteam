@@ -45,6 +45,7 @@
       <div class="wrap">
         <form class="form" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact">
+          <input type="hidden" name="subject" value="New website lead | A Good Life Team">
           <p class="hidden"><label>Leave this empty: <input name="bot-field"></label></p>
 
           <div class="row">
@@ -150,6 +151,14 @@
     });
     const want = new URLSearchParams(location.search).get('interest');
     if (want) { const r = document.querySelector('input[name="interest"][value="' + want + '"]'); if (r) r.checked = true; }
+    const form = document.querySelector('form[name="contact"]');
+    form.addEventListener('submit', () => {
+      const who = form.querySelector('#name').value.trim();
+      const pick = form.querySelector('input[name="interest"]:checked');
+      const kind = pick ? pick.value : 'website';
+      const label = kind === 'Just a question' ? 'New question' : 'New ' + kind + ' lead';
+      form.querySelector('input[name="subject"]').value = label + (who ? ' from ' + who : '') + ' | A Good Life Team';
+    });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
