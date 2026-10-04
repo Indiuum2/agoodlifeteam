@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agoodlifeteam.com/sitemap.xml
