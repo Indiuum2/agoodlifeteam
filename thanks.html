@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | A Good Life Team</title>
+  <meta name="description" content="Thanks for contacting A Good Life Team.">
+  <link rel="icon" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="A Good Life Team, eXp Realty"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="https://jasonbollinger.expportal.com" target="_blank" rel="noopener">Search Homes</a>
+        <a href="buyers.html">Buyers</a>
+        <a href="sellers.html">Sellers</a>
+        <a class="btn btn-navy" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <h1>Thanks, we got your message.</h1>
+        <p>Jason or Kari will reach out soon.</p>
+      </div>
+      <svg class="water" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 70 C 360 20, 720 20, 1080 55 S 1440 80, 1440 80 L1440 120 L0 120 Z" fill="#3C80AD"/>
+        <path d="M0 95 C 400 60, 800 70, 1440 100 L1440 120 L0 120 Z" fill="#FFFFFF"/>
+      </svg>
+    </section>
+    <section class="talk">
+      <div class="wrap">
+        <h2>While you wait</h2>
+        <p class="lead">Start browsing homes for sale across Brevard County.</p>
+        <a class="btn btn-gold" href="https://jasonbollinger.expportal.com" target="_blank" rel="noopener">Search homes</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <img src="images/logo-white.svg" alt="A Good Life Team, eXp Realty">
+          <p>Jason &amp; Kari Bollinger<br>A Good Life Team, powered by eXp Realty</p>
+          <div class="social">
+            <a href="https://www.instagram.com/agoodlifeteam/" target="_blank" rel="noopener" aria-label="A Good Life Team on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="https://www.facebook.com/agoodlifeteam" target="_blank" rel="noopener" aria-label="A Good Life Team on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21h3.1z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>Jason: <a href="tel:+13213983739">321-398-3739</a></li>
+            <li>Kari: <a href="tel:+13214086458">321-408-6458</a></li>
+            <li><a href="mailto:info@agoodlifeteam.com">info@agoodlifeteam.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Brokerage</h3>
+          <p>eXp Realty, LLC<br>10752 Deerwood Park Blvd #100<br>Jacksonville, FL 32256</p>
+        </div>
+      </div>
+      <div class="legal">
+        <p>&copy; <span id="year">2026</span> A Good Life Team. All rights reserved. Jason and Kari Bollinger are real estate sales associates with eXp Realty. Equal Housing Opportunity.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const t = document.querySelector('.menu-toggle'), n = document.getElementById('nav');
+    t.addEventListener('click', () => {
+      const open = n.classList.toggle('open');
+      t.setAttribute('aria-expanded', open);
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
