@@ -126,17 +126,7 @@ p { margin: 0 0 1em; max-width: 62ch; }
 .hero p { font-size: 1.25rem; color: #D7E4EE; max-width: 34ch; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: 1.8rem; }
 .hero-photo { position: relative; }
-.hero-photo::before {
-  /* the sunrise: gold rays behind the photo, borrowed from the logo mark */
-  content: "";
-  position: absolute;
-  inset: -13%;
-  background: repeating-conic-gradient(from -93deg at 50% 50%, var(--gold) 0deg 7deg, transparent 7deg 15deg);
-  -webkit-mask: radial-gradient(circle, transparent 58.5%, #000 59%, #000 66%, transparent 66.5%);
-          mask: radial-gradient(circle, transparent 58.5%, #000 59%, #000 66%, transparent 66.5%);
-  clip-path: inset(0 0 50% 0);
-  opacity: .9;
-}
+.hero h1 em { font-style: normal; color: var(--gold); }
 .hero-photo img {
   position: relative;
   border-radius: 50%;
@@ -144,6 +134,8 @@ p { margin: 0 0 1em; max-width: 62ch; }
   object-fit: cover;
   width: 100%;
   border: 6px solid var(--white);
+  /* navy gap, then a thin gold ring */
+  box-shadow: 0 0 0 10px var(--navy), 0 0 0 13px var(--gold);
 }
 .water {
   position: absolute; left: 0; right: 0; bottom: -1px;
