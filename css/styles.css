@@ -273,9 +273,9 @@ section { padding: clamp(3.5rem, 7vw, 6rem) 0; }
 .reach .social a:hover { background: var(--navy); color: var(--white); }
 
 /* Search Homes page */
-.search-main { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.search-main { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 5vw, 4rem); align-items: stretch; }
 @media (max-width: 860px) { .search-main { grid-template-columns: 1fr; } }
-.search-card { background: var(--navy); color: #D7E4EE; border-radius: var(--radius); padding: clamp(1.8rem, 4vw, 2.6rem); border-top: 5px solid var(--gold); }
+.search-card { background: var(--navy); color: #D7E4EE; border-radius: var(--radius); padding: clamp(1.8rem, 4vw, 2.6rem); border-top: 5px solid var(--gold); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; }
 .search-card h2 { color: var(--white); }
 .search-card p { color: #D7E4EE; }
 .search-card .btn { font-size: 1.15rem; padding: 1rem 1.8rem; margin-top: .5rem; }
